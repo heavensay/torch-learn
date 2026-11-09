@@ -1,0 +1,15 @@
+#[project]
+#name = "torch-learn"
+#version = "0.1.0"
+#requires-python = ">=3.12"
+#dependencies = []
+[tool.uv]
+constraint-dependencies = [
+    "onnxruntime==1.23.2",
+]
+
+[tool.uv.workspace]
+members = [
+    "milvus-image-search-learn",
+    "milvus-text-search-learn",
+]

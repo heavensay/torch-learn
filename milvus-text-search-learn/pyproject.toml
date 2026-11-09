@@ -1,0 +1,22 @@
+[project]
+name = "text-search.toml"
+version = "0.1.0"
+description = "向量数据库milvus 文本搜索demo"
+readme = "README.md"
+#requires-python = ">=3.14"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy<2",
+    "pymilvus",
+    "sentence-transformers",
+    "milvus-lite", #milvus-lite本地数据库，用于小数据集测试使用
+    "pandas",
+    "scikit-learn",
+    "streamlit",
+    "streamlit-cropper",
+    "datasets",
+]
+
+
+[tool.uv]
+package = false
