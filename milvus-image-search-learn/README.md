@@ -1,8 +1,14 @@
 # milvus-learn
-此项目是测试milvus向量数据库
-用图搜索图，参考官方示例：https://github.com/milvus-io/bootcamp/blob/master/tutorials/quickstart/apps/image_search_with_milvus
+此项目是测试milvus向量数据库，用图搜索图
 
-需要组件：
+参考官方示例：https://github.com/milvus-io/bootcamp/blob/master/tutorials/quickstart/apps/image_search_with_milvus
+
+使用timm的ResNet-34模型从图像中提取嵌入信息；
+
+图片向量度量方式：余弦距离(COSINE)；
+
+
+## 需要组件
 milvus-lite：本地向量数据库，项目依赖加载时就会安装(即服务逻辑都在python包中)；
 
 ## 操作步骤
@@ -16,8 +22,8 @@ milvus-lite：本地向量数据库，项目依赖加载时就会安装(即服�
 ~~~
 python insert.py ./milvus-data/reverse_image_search/train
 ~~~
->数据集来源https://github.com/milvus-io/pymilvus-assets/releases/download/imagedata/reverse_image_search.zip
->
+>数据集来源：https://github.com/milvus-io/pymilvus-assets/releases/download/imagedata/reverse_image_search.zip
+
 
 2启动python app对外服务
 ~~~
@@ -37,8 +43,7 @@ streamlit run app.py
 milvus-data/milvus_demo.db即milvus-lite本地向量数据库；
 
 milvus-data/reverse_image_search，图片数据集，来自https://github.com/milvus-io/pymilvus-assets/releases/download/imagedata/reverse_image_search.zip
-
-注意：此目录不上传git
+> 注意：milvus-data目录不上传git，附件下载后，放到此目录下即可；
 
 ## 原理
 

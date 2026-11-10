@@ -58,7 +58,7 @@ streamlit run ui.py
 > 搜索流程概述：bm25，sparse向量精确匹配；dense向量进行ip计算，得到相似度结果；混合搜索：同时进行sparse、dense双通道搜索，根据预设权重，rerank排序后返回结果；
 
 效果图：
-![](./pic/search1.png)
+![](./pic/image-20261107173714.webp)
 
 ## 目录介绍
 milvus-data：此demo数据存储目录，此目录不上传git，通过操作步骤会自动生成对应的文件；
